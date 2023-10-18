@@ -1,4 +1,5 @@
 package com.mycompany.proyecto;
+
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -40,7 +41,7 @@ class MultiClientHandler extends Thread {
                     break;
                 }
 
-                System.out.println(clientInfo + " says: " + received);
+                System.out.println("("+clientInfo + ") " + received);
 
                 // Transmitir el mensaje a todos los clientes
                 broadcast(clientInfo + " says: " + received);
@@ -78,7 +79,7 @@ class MultiClientHandler extends Thread {
 
     private void notifyUsersConnected() {
         // Notificar a todos los clientes sobre la cantidad actual de usuarios conectados
-        String userListMessage = "Usuarios Conectados: " + clients.size();
+        String userListMessage = "" + clients.size();
         for (MultiClientHandler client : clients) {
             try {
                 client.dos.writeUTF(userListMessage);

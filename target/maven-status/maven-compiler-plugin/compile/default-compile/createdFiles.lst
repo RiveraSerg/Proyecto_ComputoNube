@@ -1,5 +1,6 @@
 com\mycompany\proyecto\EchoServer.class
 module-info.class
+com\mycompany\proyecto\MultiClientController.class
 com\mycompany\proyecto\App.class
 com\mycompany\proyecto\MultiClientHandler.class
 com\mycompany\proyecto\MultiClient.class

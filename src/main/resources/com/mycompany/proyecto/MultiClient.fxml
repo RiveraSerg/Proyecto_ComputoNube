@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane id="AnchorPane" prefHeight="539.0" prefWidth="871.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.proyecto.MultiClientController">
+   <children>
+      <Circle fx:id="Circle2" fill="DODGERBLUE" layoutX="436.0" layoutY="468.0" radius="47.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="Circle3" fill="DODGERBLUE" layoutX="786.0" layoutY="270.0" radius="47.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="Circle4" fill="DODGERBLUE" layoutX="61.0" layoutY="269.0" radius="47.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="Circle1" fill="DODGERBLUE" layoutX="436.0" layoutY="67.0" radius="47.0" stroke="BLACK" strokeType="INSIDE" />
+   </children>
+</AnchorPane>
