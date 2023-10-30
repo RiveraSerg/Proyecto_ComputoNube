@@ -23,7 +23,7 @@ class MultiClientHandler extends Thread {
 
     public void run() {
         String received;
-        String clientInfo = "Client " + socket.getInetAddress().getHostAddress() + ":" + socket.getPort();
+        String clientInfo = "Client " + socket.getInetAddress().getHostAddress() + " " +socket.getPort();
 
         try {
             dos.writeUTF("Send msg to Server (type Exit to terminate connection)");
@@ -44,7 +44,7 @@ class MultiClientHandler extends Thread {
                 System.out.println("("+clientInfo + ") " + received);
 
                 // Transmitir el mensaje a todos los clientes
-                broadcast(clientInfo + " says: " + received);
+                broadcast(clientInfo + " " + received);
             }
         } catch (IOException e) {
             System.out.println("Error: " + e);
